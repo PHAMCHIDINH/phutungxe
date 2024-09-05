@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <link rel="icon" href="hinh/logoweb2.png" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PhuTungMoto</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="css/css.css">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+  <!--Container-->
+    <section class="header">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-2  ">
+                    <img src="hinh/LOGO/logoweb.png" alt="logo" class="img-fluid" >
+                </div>
+                <div class="col-md-4 pt-5">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="BẠN MUỐN TÌM GÌ ?" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <span class="input-group-text" id="basic-addon2"><i class="fa-solid fa-magnifying-glass"></i></span>
+                      </div>
+                </div>
+                <div class="col-md-4 pt-5">
+                    <div class="row">
+                        <div class="col">
+                            <div class="row">
+                                <div class="col-3 fs-3 text-danger"><i class="fa-solid fa-phone-volume"></i></div>
+                                <div class="col-9">
+                                    Tư Vấn Hỗ Trợ <br>
+                                    <strong class="text-danger">0911585941</strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col-3 fs-3 text-danger"><i class="fa-regular fa-circle-user"></i></div>
+                                    <div class="col-9">
+                                        Xin Chào <br>
+                                        <strong class="text-danger">Đăng Nhập</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 pt-5">
+                    <div class="row">
+                        <div class="col">
+                            <a href="#" class="position-relative">
+                                <span class="fs-4"><i class="fa-regular fa-heart" style="color: #de1717;"></i></span>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="#" class="position-relative">
+                                <span class="fs-4"><i class="fa-brands fa-facebook" style="color: #de1717;"></i></span>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="col">
+                          <a href="#" id="cart" class="position-relative">
+                            <span class="fs-4"><i class="fa-solid fa-cart-shopping" style="color: #de1717;"></i></span>
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                0
+                                <span class="visually-hidden">unread messages</span>
+                            </span>
+                        </a>
+                            <div id="myModal" class="modal">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Giỏ Hàng</h5>
+                                        <span class="close">&times;</span>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="cart-row">
+                                            <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                                            <span class="cart-price cart-header cart-column">Giá</span>
+                                            <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                                        </div>
+                                        <div class="cart-items">
+
+                                        </div>
+                                        <div class="cart-total">
+                                            <strong class="cart-total-title">Tổng Cộng:</strong>
+                                            <span class="cart-total-price">0VNĐ</span>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                                        <button type="button" class="btn btn-primary order">Thanh Toán</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  <!--end Container-->
+<!-------------------------------->
+<!-------------------------------->
+  <!--Menu-->
+    <section class="menu">
+        <div class="row bg-danger text-white">
+            <div class="col-md-5 pt-3 px-4 container">Danh Mục Sản Phẩm</div>
+            <div class="col-md-7">
+                <nav class="navbar navbar-expand-lg bg-body-danger ">
+                    <div class="container-fluid">
+                      <a class="navbar-brand text-white" href="#"></a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="trangchu.html">Trang Chủ</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Giới thiệu</a>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Sản Phẩm
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Phụ Kiện</a></li>
+                              <li><a class="dropdown-item" href="#">Xe Máy</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#">Xe MoTo</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link disabled text-white" aria-disabled="true">Tin Tức</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Câu Truyện</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Tuyển Dụng</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Liên hệ</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
+        </div>
+    </section>
+  <!--end Menu-->
+  <section class="information">
+    <div class="container">
+        <div class="row py-3">
+            <div class="col">
+                <div class="fs-3"><img src="hinh//SanPham/sp7.jpg" alt="" style="width: 500px; height: auto;"></div>
+                
+            </div>
+            <div class="col">
+                <h3  style="color: red;">Áo giáp da Dai Nì dòng Super Fast (size 52)</h3>
+                <br>
+                <div class="gray-line"></div>
+                <br>
+                <span class="money price"><h4 style="color: black;"><i class="fa-solid fa-hand-point-right"></i>   9800000đ</h4></span>
+                <span class="money price"><h6 style="color: gray;">Giá gốc : <del>14000000đ</del></h6></span>
+                <br>
+                <div class="gray-line"></div>
+                <br>
+                <h4>Mô tả: </h4>
+                <ul type="disc">
+                    <li>Hàng chính hãng</li>
+                    <br>
+                    <li>Có nhiều lớp giáp bảo vệ</li>
+                    <br>
+                    <li>Size 52</li>
+                </ul>
+                <div>
+                    <button type="button" class="btn btn-cart bg-light">
+                      <i class="fa-solid fa-cart-shopping" style="color: red;"></i>&nbsp;Thêm Vào Giỏ Hàng
+                    </button>
+                    <button type="button" class="btn btn-cart bg-danger text-white" >
+                        Mua Ngay
+                    </button>
+                  </div>
+            </div>
+        </div>
+        <!--------------------------------->
+    </div>
+  </section>
+  <br>
+  <!--Footer-->
+  <section class="footer">
+    <div class="bg-dark text-white px-4 py-3">
+        <div class="row">
+            <div class="col"><div class="row"><div class="fs-3" ><img src="hinh/logoweb.png" alt="logo" class="rounded" style="height: 150px;"></div></div></div>          
+            <div class="col">
+                
+                <div class="row">
+                    <div class="col-md-2"><span class="fs-2 text-end"><i class="fa-solid fa-map-location-dot"></i></span></div>
+                    <div class="col-md-10">
+                        <p class="m-0">ĐỊA CHỈ</p>
+                        <p>262-Lạc Long Quân, Phường 10, Quận 11, Tp.Hồ Chí Minh</p>
+                 </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2"><span class="fs-2 text-end"><i class="fa-solid fa-phone-volume"></i></span></div>
+                    <div class="col-md-10">
+                        <p class="m-0">SỐ LIÊN HỆ</p>
+                        <p>0339599809</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2"><span class="fs-2 text-end"><i class="fa-regular fa-envelope"></i></span></div>
+                    <div class="col-md-10">
+                        <p class="m-0">EMAIL LIÊN HỆ</p>
+                        <p>phamhuynhtotram120304@gmail.com</p>
+                    </div>
+                </div> 
+            </div>
+            <div class="col">      
+                <div class="ft-label">
+                    <h4>LIÊN HỆ</h4>
+                        <ul>
+                            <li><a href="#" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Giới thiệu</a></li>
+                            <li><a href="#" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Sản phẩm</a></li>
+                            <li><a href="#" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Đăng ký &amp; đăng nhập</a></li>
+                            <li><a href="#" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Chính sách bảo mật</a></li>
+                            <li><a href="#" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Chính sách giao hàng</a></li>
+                            <li><a href="#" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Chính sách đổi trả</a></li>
+                            <li><a href="#" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Chính sách thanh toán</a></li>
+                            <li><a href="#" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Chính sách bảo hành</a></li>
+                            <li><a href="#" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Chính sách khiếu nại</a></li>
+                        </ul>
+                </div>
+            </div>
+            <div class="col">      
+                <div class="ft-label">
+                    <h4>DANH MỤC SẢN PHẨM</h4>
+                        <ul>
+                            <li><a href="#" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Phụ tùng xe Honda</a></li>
+                            <li><a href="#" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Phụ tùng xe Yamaha</a></li>
+                            <li><a href="#" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Ắc quy – Nhớt – Phụ gia</a></li>
+                            <li><a href="#" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Phụ tùng xe SYM</a></li>
+                            <li><a href="#" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Phụ tùng xe Piaggio</a></li>
+                            <li><a href="#" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Phụ tùng xe Suzuki</a></li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            
+        </div>
+    </div>
+    </section>
+  <!--end Footer-->
+<!-- javascript -->
+<script src="js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

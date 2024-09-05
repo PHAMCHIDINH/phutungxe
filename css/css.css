@@ -1,0 +1,58 @@
+.box-area {
+    border-top: 8px solid #02070f;
+    padding: 10px 0;
+    background-color: #FFFFFF;
+}
+body{
+    background-color:#F5F5F5;
+}
+.carousel-caption1 {
+    color: #FFFFFF;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.split-frame {
+    width: 300px; /* Đặt chiều rộng cho khung */
+    height: 30px; /* Đặt chiều cao cho khung */
+    border: 1px solid #000; /* Đặt đường viền cho khung */
+    margin-bottom: 10px; /* Thêm khoảng cách dưới mỗi khung */
+}
+.split-frame .col-md-2 {
+    background-color: black;
+    color: white; /* Để văn bản trở nên dễ đọc trên nền đen */
+}
+.gray-line {
+    height: 2px;
+    width: 60px; /* Độ dài của đường kẻ */
+    background-color: #C0C0C0; /* Mã màu xám nhạt */
+    margin-left: 5px; /* Khoảng cách của đường kẻ so với bên trái */
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .a1 {
+    text-decoration: none;
+}
+.form-control, .input-group-text {
+    height: 40px; /* Điều chỉnh giá trị theo mong muốn */
+}
+.input-group {
+    display: flex;
+    align-items: center; /* Canh chiều cao theo chiều dọc */
+}
+#top-up {
+    font-size: 3rem;
+    cursor: pointer;
+    position: fixed;
+    z-index: 9999;
+    color:#004993;
+    bottom: 20px;
+    right: 15px;
+    display: none;
+    }
+    #top-up:hover {
+    color: #333
+    }
